@@ -1,8 +1,8 @@
 # Site settings
 title: WuYi
-SEOTitle: 你的博客 | Your Blog
+SEOTitle: WuYi's Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: Ngone_5451@163.com
 description: ""
 keyword: ""
 url: "http://huangxuan.me"              # your host, for absolute URL
@@ -12,11 +12,7 @@ baseurl: "/Ngone51.github.io"         # for example, '/blog' if your blog hosted
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+github_username:    Ngone51
 
 
 
@@ -50,9 +46,9 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+#duoshuo_username: huxblog
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
@@ -68,8 +64,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "A kid form the earth."
+sidebar-avatar: "/img/avatar-me.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -82,19 +78,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
+        title: "stackoverflow",
+        href: "https://stackoverflow.com"
     }
 ]
