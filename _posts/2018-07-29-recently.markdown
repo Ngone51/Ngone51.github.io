@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "最近"
+subtitle:   "忙什么？"
+date:       2018-07-29 22:25:00
+author:     "wuyi"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Casual
+---
+
+<p id = "build"></p>
+---
+
+    好久好久好久没有看spark源码了，也很久很久很久没有关注spark社区了。都是因为工作太忙？我想spark社区的那些committer肯定比我更忙吧...
+    所以说，还是得坚持。能看一点是一点，只要每一点都能有收获。以及，要有目标，要有计划。希望接下来能够继续搞起来。
+    撇了一眼spark社区，有几点想在这里写一下：
+    1. SPARK-23626 [CORE]：在多个job并发执行的情形下，由于DAGScheduler的单线程处理（EventLoop）的特性，一个job的JobSubmit事件（由于划分stage、设置preffered分区需要时间）
+    可能会阻塞其它job的TaskCompletion事件。这确实是一个问题（如果有完美的解决方法就好了）。但是我想，如果一个task的执行时间远远大于一个job的划分时间，那这应该不会
+    是一个大的问题。
+    2.Spark-24817 [CORE]: Barrier调度似乎已经真正实现起来了，spark2.4版本应该就会出来。这个东西到底怎么应用我还不清楚，应当看看jiangxb1987的pr。
+    3.Spark-24307 [CORE]: Support reading remote cached partitions > 2gb. 这个pr我只是一开始的跟着看了看，其实还是懵懵懂懂的。squito居然@了我可以提起一个follow pr来完成
+    剩下的工作...过了十几天，我已经完全不明白是怎么一回事了...
+
+spark的还是得持续看，持续用，才会有更清晰的认识。比如，spark-23626，之前看的时候其实也不明确到底是什么问题，但是现在（应该说过了蛮久了）回过去头去，就清晰很多了。
+估计之后会涉及到mllib那块很多的源码相关的东西。
+
+这篇文章算是一次自省了。还是得抱住spark的大腿啊。
+加油吧，骚年。  
